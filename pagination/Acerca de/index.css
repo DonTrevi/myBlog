@@ -1,69 +1,20 @@
 *{
   margin: 0;
   padding: 0;
+
 }
 
-body{
-  transition: all 0.4s
-}
-body.darkmode{
-  background-color: #2a2432;;
-  color: white;
-}
-.switch{
-  background: #343D5B;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-}
-.switch.active{
-  background: orange;
-  color: black;
-}
-.switch::after {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: white;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: .3s ease all;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
-}
-.switch.active::after{
-  right: 0;
-  left: unset;
-}
-.switch span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: block;
-  background: none;
-  color: white;
-}
-pre {
-  padding-top: 30px;
-  text-align: center;
-  font-size: 15px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
 h2 {
+  color: white;
   text-align: center;
   padding-top: 10px;
   font-family: Ubuntu mono;
   font-size: 40px;
+
 }
-
-
+body {
+  background-color: #2a2432;
+}
 
 header {
   position: sticky;
@@ -155,5 +106,7 @@ header {
     border-radius: 20px;
     background: #33339c;
   }
-
+  .container{
+    padding: 10px;
+  }
 }
