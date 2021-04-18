@@ -32,11 +32,12 @@ btnSwitch.addEventListener('click', () => {
   }
 });
 
-  //Ask for actual mode:
-  if(localStorage.getItem('darkmode') == 'true') {
-    document.body.classList.add('darkmode')
-    btnSwitch.classList.add('active');
-  }else{
-    document.body.classList.remove('darkmode')
-    btnSwitch.classList.remove('active');
-  }
+//Ask for actual mode:
+
+if(localStorage.getItem('darkmode') == 'true') {
+  document.body.classList.add('darkmode')
+  btnSwitch.classList.add('active');
+}else{
+  document.body.classList.remove('darkmode')
+  btnSwitch.classList.remove('active');
+}

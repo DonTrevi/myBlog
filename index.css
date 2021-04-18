@@ -10,9 +10,13 @@ body.darkmode{
   background-color: #2a2432;;
   color: white;
 }
+
 .switch{
+  /*  */
   background: #343D5B;
-  border-radius: 1000px;
+  top: 5px;
+  text-align: center;
+  border-radius: 100px;
   border: none;
   position: relative;
   cursor: pointer;
@@ -105,7 +109,7 @@ header {
 }
 
 #menu ul li a {
-  display: inline-block;
+  display: flex;
   position: relative;
   text-decoration: none;
   color: white;
@@ -124,10 +128,16 @@ header {
 .show {
   height: 305px !important;
 }
-
+#menu ul{
+    text-align: center;
+    align-items: center;
+  }
 @media screen and (max-width:700px){
   .menu-toggle{
     display: block;
+  }
+  .switch{
+    left: 15px;
   }
   #menu{
     background-color: #7272e0;
@@ -141,12 +151,10 @@ header {
   }
   #menu ul li{
     display: block;
-    text-align: center;
-
   }
   #menu ul li a{
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     border-bottom: 1px solid #7272e0;
     line-height: 30px;
@@ -155,5 +163,6 @@ header {
     border-radius: 20px;
     background: #33339c;
   }
+
 
 }
