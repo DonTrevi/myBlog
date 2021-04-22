@@ -4,13 +4,55 @@
 }
 
 body{
+  background-color: #f883fe;
   transition: all 0.4s
 }
 body.darkmode{
   background-color: #2a2432;;
   color: white;
 }
-
+form{
+  border-radius: 5px;
+  color: #999;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  width: 300px;
+}
+input, textarea{
+  border: none;
+  outline: none;
+  width: 280px;
+}
+.center-content{
+  text-align: center;
+}
+.field{
+  padding: 10px;
+  border: solid 2px #ccc;
+  border-radius: 3px;
+}
+.field:focus{
+  border-color: #f883fe;
+}
+.field.darkmode:focus{
+  border-color: #3c3375;
+}
+.btnSubmit{
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #343D5B;
+  box-shadow: #3c3375;
+  color: white;
+  background-color: #3c3375;
+}
+.btnSubmit:hover{
+  color: #f883fe;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .switch{
   /*  */
   background: #343D5B;
@@ -66,9 +108,6 @@ h2 {
   font-family: Ubuntu mono;
   font-size: 40px;
 }
-
-
-
 header {
   position: sticky;
   top: 0;
@@ -77,7 +116,6 @@ header {
   display: flex;
   padding: 0 20px;
 }
-
 .menu-toggle {
   display: none;
   margin-left: auto;
@@ -86,7 +124,6 @@ header {
   font-size: 25px;
   cursor: pointer;
 }
-
 .logo a{
   color: white;
   text-decoration: none;
@@ -95,19 +132,15 @@ header {
   text-transform: uppercase;
   font-family: Silkscreen;
 }
-
 .logo a:hover{
   text-decoration: underline;
 }
-
 #menu {
   margin-left: auto;
 }
-
 #menu ul li {
   display: inline-block;
 }
-
 #menu ul li a {
   display: flex;
   position: relative;
@@ -118,13 +151,11 @@ header {
   text-transform: uppercase;
   transition: .2s;
 }
-
 #menu ul li a:hover {
   height: auto;
   background-color: #7878ec;
   border-radius: 20px;
 }
-
 .show {
   height: 305px !important;
 }
@@ -163,6 +194,4 @@ header {
     border-radius: 20px;
     background: #33339c;
   }
-
-
 }
